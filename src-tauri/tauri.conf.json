@@ -64,7 +64,8 @@
         "icons/icon.ico"
       ],
       "resources": [
-        "./../py_files"
+        "./../py_files",
+        "./../audios"
       ]
     },
     "security": {

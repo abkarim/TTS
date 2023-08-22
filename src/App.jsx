@@ -5,6 +5,7 @@ import "./App.css";
 import TextInput from "./TextInput";
 import Select from "./Select";
 import speakers from "./util/speakers";
+import Audios from "./Audios";
 
 function GenerateTTS() {
     const [loading, setLoading] = useState(false);
@@ -82,7 +83,8 @@ function App() {
 
     return (
         <div className="h-screen w-full flex items-center justify-center font-mono p-5">
-            {isPythonInstalled === true && <GenerateTTS />}
+            <div>{isPythonInstalled === true && <GenerateTTS />}</div>
+            <div>{isPythonInstalled === true && <Audios />}</div>
             {isPythonInstalled === false && (
                 <h1 className="text-5xl text-center text-zinc-950">
                     Please install python
