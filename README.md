@@ -8,4 +8,4 @@ using coqui-ai/TTS
 pip install TTS
 ```
 
-Make sure to download model
+espeak-ng

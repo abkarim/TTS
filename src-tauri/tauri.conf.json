@@ -14,12 +14,12 @@
     "allowlist": {
       "all": false,
       "shell": {
-        "all": false,
+        "all": true,
         "open": true
       },
       "dialog": {
         "all": false,
-        "ask": false,
+        "ask": true,
         "confirm": false,
         "message": false,
         "open": true,
@@ -36,9 +36,17 @@
         "removeFile": true,
         "renameFile": true,
         "scope": [
+          "$RESOURCE/*",
+          "$APP/*",
           "*"
         ],
         "writeFile": true
+      },
+      "protocol": {
+        "asset": true,
+        "assetScope": [
+          "**"
+        ]
       },
       "window": {
         "all": false,
@@ -75,7 +83,7 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "TTS",
+        "title": "Text to Speech - made with love ❤️ by karim",
         "width": 800,
         "height": 600
       }
