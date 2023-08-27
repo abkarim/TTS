@@ -1,7 +1,6 @@
 // Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 use std::fs::{self, ReadDir};
-use std::io;
 use std::path::{Path, PathBuf};
 use std::process::Command;
 
@@ -80,7 +79,7 @@ fn export_audio(file_name: String, destination: String) {
     let source_path = format!("{}/{}.wav", AUDIOS_PATH, file_name);
     let destination_path = Path::new(&destination);
 
-    fs::copy(&source_path, destination_path);
+    let _ = fs::copy(&source_path, destination_path);
 }
 
 #[tauri::command]

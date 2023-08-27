@@ -12,7 +12,8 @@ export default function GenerateTTS({ remountApp }) {
     const [speaker, setSpeaker] = useState("p225");
 
     const generate = async () => {
-        if (filename === null) return setLoading(false);
+        if (filename.trim() === "" || text.trim() === "")
+            return setLoading(false);
 
         await invoke("generate_text", {
             text,

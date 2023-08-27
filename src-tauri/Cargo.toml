@@ -1,6 +1,6 @@
 [package]
 name = "text_to_speech"
-version = "0.0.0"
+version = "1.0.2"
 description = "Text to speech app by karim"
 authors = ["karim"]
 license = ""

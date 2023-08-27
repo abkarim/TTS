@@ -7,12 +7,12 @@ file_name = sys.argv[2]
 speaker = sys.argv[3]
 
 # Select model
-model_name = "../py_files/models/tts_models--en--vctk--vits/"
-model_path = "../py_files/models/tts_models--en--vctk--vits/model_file.pth"
-config_path = "../py_files/models/tts_models--en--vctk--vits/config.json"
+model_name = "./_up_/py_files/models/tts_models--en--vctk--vits/"
+model_path = "./_up_/py_files/models/tts_models--en--vctk--vits/model_file.pth"
+config_path = "./_up_/py_files/models/tts_models--en--vctk--vits/config.json"
 
 # Audios path
-audios_path = "../audios/";
+audios_path = "./_up_/audios/";
 
 tts = TTS(model_path=model_path, config_path=config_path)
 
