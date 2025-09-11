@@ -17,10 +17,10 @@
   "devDependencies": {
     "@flaticon/flaticon-uicons": "^2.4.0",
     "@tauri-apps/cli": "^1.5.6",
-    "@vitejs/plugin-react": "^4.0.3",
+    "@vitejs/plugin-react": "^4.7.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
-    "vite": "^4.5.9"
+    "vite": "^7.1.5"
   }
 }
